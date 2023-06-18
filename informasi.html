@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, Matrix lite admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, Matrix admin lite design, Matrix admin lite dashboard bootstrap 5 dashboard template"
+    />
+     <meta
+      name="description"
+      content="SIMA (Sistem Informasi Mahasiswa)"
+    />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>SIMA - Profil</title>
+    <!-- Favicon icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="25x25" 
+      href="../assets/images/SIMA1.png"
+    />
+    <!-- Custom CSS -->
+    <link
+      href="../assets/libs/jquery-steps/jquery.steps.css"
+      rel="stylesheet"
+    />
+    <link href="../assets/libs/jquery-steps/steps.css" rel="stylesheet" />
+    <link href="../dist/css/style.min.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+      <div class="lds-ripple">
+        <div class="lds-pos"></div>
+        <div class="lds-pos"></div>
+      </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div
+      id="main-wrapper"
+      data-layout="vertical"
+      data-navbarbg="skin5"
+      data-sidebartype="full"
+      data-sidebar-position="absolute"
+      data-header-position="absolute"
+      data-boxed-layout="full"
+    >
+      <!-- ============================================================== -->
+      <!-- Topbar header - style you can find in pages.scss -->
+      <!-- ============================================================== -->
+      <header class="topbar" data-navbarbg="skin5">
+        <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+          <div class="navbar-header" data-logobg="skin5">
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Logo -->
+            <!-- ============================================================== -->
+            <a class="navbar-brand" href="index.html">
+              <!-- Logo icon -->
+              <b class="logo-icon ps-5">
+                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                <!-- Dark Logo icon -->
+                <img
+                  src="../assets/images/SIMA2.png"
+                  alt="homepage"
+                  class="light-logo"
+                  width="130"
+                />
+              </b>
+              <!--End Logo icon -->
+            </a>
+            <!-- ============================================================== -->
+            <!-- End Logo -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Toggle which is visible on mobile only -->
+            <!-- ============================================================== -->
+            <a
+              class="nav-toggler waves-effect waves-light d-block d-md-none"
+              href="javascript:void(0)"
+              ><i class="ti-menu ti-close"></i
+            ></a>
+          </div>
+          <!-- ============================================================== -->
+          <!-- End Logo -->
+          <!-- ============================================================== -->
+          <div
+            class="navbar-collapse collapse"
+            id="navbarSupportedContent"
+            data-navbarbg="skin5"
+          >
+            <!-- ============================================================== -->
+            <!-- toggle and nav items -->
+            <!-- ============================================================== -->
+            <ul class="navbar-nav float-start me-auto">
+              <li class="nav-item d-none d-lg-block">
+                <a
+                  class="nav-link sidebartoggler waves-effect waves-light"
+                  href="javascript:void(0)"
+                  data-sidebartype="mini-sidebar"
+                  ><i class="mdi mdi-menu font-24"></i
+                ></a>
+              </li>
+
+              <!-- ============================================================== -->
+              <!-- Search -->
+              <!-- ============================================================== -->
+              <li class="nav-item search-box">
+                <a
+                  class="nav-link waves-effect waves-dark"
+                  href="javascript:void(0)"
+                  ><i class="mdi mdi-magnify fs-4"></i
+                ></a>
+                <form class="app-search position-absolute">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search &amp; enter"
+                  />
+                  <a class="srh-btn"><i class="mdi mdi-window-close"></i></a>
+                </form>
+              </li>
+            </ul>
+
+              <!-- ============================================================== -->
+              <!-- ============================================================== -->
+              <!-- User profile and search -->
+              <!-- ============================================================== -->
+              <li class="nav-item dropdown">
+                <a
+                  class="
+                    nav-link
+                    dropdown-toggle
+                    text-muted
+                    waves-effect waves-dark
+                    pro-pic
+                  "
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="../assets/images/users/1.jpg"
+                    alt="user"
+                    class="rounded-circle"
+                    width="31"
+                  />
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end user-dd animated"
+                  aria-labelledby="navbarDropdown">
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="edit_profil.html"
+                    ><i class="mdi mdi-account me-1 ms-1"></i> Edit Profile</a>
+                  <div class="dropdown-divider"></div>
+                   <div class="ps-4 p-10">
+                    <button class="btn btn-danger" onclick="logout()">Logout</button>
+                   </div>
+                </ul>
+              </li>
+              <!-- ============================================================== -->
+              <!-- User profile and search -->
+              <!-- ============================================================== -->
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- ============================================================== -->
+      <!-- End Topbar header -->
+      <!-- ============================================================== -->
+      <!-- Left Sidebar - style you can find in sidebar.scss  -->
+      <!-- ============================================================== -->
+      <aside class="left-sidebar" data-sidebarbg="skin5">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+
+      <!-- Sidebar navigation-->
+      <!--Sidebar awal-->
+          <nav class="sidebar-nav">
+            <ul id="sidebarnav" class="pt-4">
+              <li class="sidebar-item">
+                
+              </li>
+
+      <!--Sidebar awal-->        
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link has-arrow waves-effect waves-dark"
+                  href="javascript:void(0)"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-receipt"></i
+                  ><span class="hide-menu">Dashboard </span></a
+                >
+                <ul aria-expanded="false" class="collapse first-level">
+                  
+                  
+      <!--Sidebar awal scrol-->
+                  <li class="sidebar-item">
+                    <a href="profil.html" class="sidebar-link"
+                      ><i class="mdi mdi-face-profile"></i
+                      ><span class="hide-menu"> Profil </span></a
+                    >
+                  </li>
+
+      <!--Sidebar awal scrol-->        
+                  <li class="sidebar-item">
+                    <a href="informasi.html" class="sidebar-link"
+                      ><i class="mdi mdi-information-outline"></i
+                      ><span class="hide-menu"> Informasi </span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+ 
+
+<!--Sidebar awal-->               
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="hasilstudi.html"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-file-lock"></i
+                  ><span class="hide-menu">Hasil Studi</span></a
+                >
+              </li>             
+
+      <!--Sidebar awal-->               
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="transkip.html"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-file-pdf"></i
+                  ><span class="hide-menu">Transkip Nilai</span></a
+                >
+              </li>
+
+      <!--Sidebar awal-->        
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="jadwal_pembelajaran.html"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-calendar-check"></i
+                  ><span class="hide-menu">Jadwal Pembelajaran</span></a
+                >
+              </li>
+
+      <!--Sidebar awal-->               
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="keuangan.html"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-cash-100"></i
+                  ><span class="hide-menu">Keuangan</span></a
+                >
+              </li>
+      
+      <!--Sidebar awal-->               
+              <li class="sidebar-item">
+                <a
+                  class="sidebar-link waves-effect waves-dark sidebar-link"
+                  href="kalender.html"
+                  aria-expanded="false"
+                  ><i class="mdi mdi-calendar"></i
+                  ><span class="hide-menu">Kalender Akademik</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+
+      <!-- ============================================================== -->
+      <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- Page wrapper  -->
+      <!-- ============================================================== -->
+      <div class="page-wrapper">
+        <!-- ============================================================== -->
+        <!-- Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <div class="page-breadcrumb">
+          <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+              <h4 class="page-title">Informasi</h4>
+              <div class="ms-auto text-end">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Library
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Bread crumb and right sidebar toggle -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Container fluid  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+          <!-- ============================================================== -->
+          <!-- Start Page Content -->
+          <!-- ============================================================== -->
+          <div class="card">
+          <div class="card-body wizard-content">
+          <div>
+          <section>
+          <h3><label for="userName" style="font-size: 25px;">SIMA</label></h3>
+          <p align="justify" style="font-size: 16px;">
+            SIMA adalah sarana pembelajaran yang luar biasa dengan aksesibilitas dan fleksibilitas tinggi. Melalui platform ini, kita dapat belajar kapan dan di mana saja, tanpa batasan waktu dan tempat. Ini adalah kesempatan berharga untuk mengembangkan diri dalam dunia digital yang terus berkembang. SIMA dilengkapi dengan fitur-fitur seperti akses materi online, ruang diskusi, dan konten multimedia interaktif yang dirancang untuk memastikan pemahaman maksimal.
+          </p>
+          <p align="justify" style="font-size: 16px;">
+            SIMA adalah pembelajaran online yang fleksibel dan mandiri. Melalui platform ini, siswa dapat belajar di waktu dan tempat yang nyaman bagi mereka, tanpa batasan geografis atau waktu. SIMA menggunakan teknologi digital dan internet untuk akses materi, interaksi, dan partisipasi dalam pembelajaran. Dengan SIMA, siswa dapat mengatasi keterbatasan ruang dan waktu dalam pembelajaran tradisional di kelas
+          </p>
+
+              <h4><label for="userName" style="font-size: 18px;">Manfaat dari penggunaan SIMA</label></h4>
+              <h6 class="card-subtitle"></h6>
+              <div>
+                <ul>
+                  <li style="font-size: 16px;">Aksesibilitas dan Fleksibilitas</li>
+                  <p align="justify" style="font-size: 15px;">
+                    Tujuan utama dari website SIMA adalah memberikan aksesibilitas yang lebih luas dan fleksibilitas kepada mahasiswa. Dengan adanya platform SIMA, mahasiswa dapat mengakses materi pembelajaran kapan saja dan di mana saja, asalkan terhubung dengan internet. Ini memungkinkan mahasiswa untuk belajar sesuai dengan jadwal dan kebutuhan mereka sendiri, tanpa terikat oleh batasan waktu dan tempat.
+                  </p>
+                </ul>
+                <ul>
+                  <li style="font-size: 16px;">Peningkatan Interaksi dan Kolaborasi</li>
+                  <p align="justify" style="font-size: 15px;">
+                    Website SIMA memungkinkan mahasiswa untuk berinteraksi dan berkolaborasi dengan dosen dan sesama mahasiswa secara online. Melalui fitur forum diskusi, ruang obrolan, atau platform kolaboratif lainnya, mahasiswa dapat berbagi ide, bertanya pertanyaan, berdiskusi, dan saling membantu dalam memahami materi pembelajaran. Hal ini meningkatkan interaksi sosial dan kolaboratif, meskipun tidak berada dalam lingkungan fisik yang sama.
+                  </p>
+                </ul>
+                <ul>
+                  <li style="font-size: 16px;">Pengayaan Pembelajaran dengan Konten Multimedia</li>
+                  <p align="justify" style="font-size: 15px;">
+                    Tujuan lain dari website SIMA adalah memberikan pengalaman pembelajaran yang lebih kaya dan interaktif melalui penggunaan konten multimedia. Penggunaan konten multimedia ini dapat membantu memperjelas konsep, membuat pembelajaran lebih menarik, dan memfasilitasi pemahaman yang lebih baik bagi mahasiswa.
+                  </p>
+                </ul>
+              </div>
+            </section>
+            
+                    <h3><label for="jurusan">Jurusan Yang Tersedia</label></h3>
+                    <ul class="container">
+                      <li class="text-container">
+                        <h4>Teknik Informatika</h4>
+                        <p align="justify" style="font-size: 15px;">
+                          Jurusan Teknik Informatika adalah salah satu program studi di perguruan tinggi yang fokus pada pengembangan dan penerapan teknologi informasi. Dalam jurusan ini, mahasiswa akan mempelajari bahasa pemrograman dan teknik pemrograman untuk mengembangkan perangkat lunak. Mereka akan belajar tentang struktur data, algoritma, paradigma pemrograman, dan teknik pemrograman yang efisien.
+
+                          Selain itu, mahasiswa jurusan Teknik Informatika juga akan mempelajari konsep jaringan komputer dan sistem operasi. Mereka akan memahami cara kerja jaringan komputer, protokol komunikasi, keamanan jaringan, dan administrasi sistem.
+
+                          Jurusan ini juga memberikan pengetahuan tentang pengembangan aplikasi web dan mobile, basis data, kecerdasan buatan, dan pemrosesan cloud. Selama masa studi, mahasiswa Teknik Informatika akan terlibat dalam proyek pengembangan perangkat lunak, baik secara individu maupun dalam tim. Mereka akan mengimplementasikan konsep-konsep yang dipelajari dalam pembuatan aplikasi nyata. Selain itu, mereka juga akan diajarkan keterampilan analisis, pemecahan masalah, dan pemikiran perbaikan yang kritis.
+                        </p>
+                      </li>
+                      <li class="image-container">
+                        <img src="../assets/images/background/Teknik-Informatika-Kenali-Jurusan-yang-Banyak-Diminati.jpg" class="img-fluid">
+                        <style>
+                        .container {
+                          display: flex;
+                          align-items: center;
+                          margin-bottom: 20px;
+                        }
+
+                        .text-container {
+                          flex: 1;
+                          margin-right: 20px;
+                        }
+
+                        .image-container img {
+                          max-width: 100%;
+                          height: auto;
+                          width: 300px;
+                          height: 200px;
+                        }
+                      </style>
+                      </li>
+                    </ul>
+
+                    <ul class="container">
+                      <li class="text-container">
+                        <h4>Ilmu Komputer</h4>
+                        <p align="justify" style="font-size: 15px;">
+                          Jurusan Ilmu Komputer adalah program studi di perguruan tinggi yang berfokus pada studi teori dan praktik dalam ilmu komputer. Kemudian untuk jurusan Ilmu Komputer ini, Mahasiswa akan mempelajari bahasa pemrograman dan teknik pemrograman untuk mengembangkan perangkat lunak. Mereka akan belajar tentang struktur data, algoritma, paradigma pemrograman, dan teknik pemrograman yang efisien. Dalam jurusan Ilmu Komputer, mahasiswa juga akan memperdalam pengetahuan mereka tentang konsep-konsep fundamental dalam ilmu komputer. Mereka akan mempelajari teori komputasi, matematika diskrit, teori graf, logika, dan analisis kompleksitas algoritma. Hal ini bertujuan untuk memberikan pemahaman yang mendalam tentang dasar-dasar ilmu komputer dan bagaimana komputer bekerja. Selain itu, mahasiswa jurusan Ilmu Komputer juga akan mempelajari topik-topik seperti kecerdasan buatan, pengolahan citra dan suara, pengenalan pola, dan komputasi paralel. Mereka akan belajar tentang teknologi terkini dalam bidang komputer dan aplikasinya dalam berbagai industri.
+                        </p>
+                      </li>
+                      <li class="image-container">
+                        <img src="../assets/images/background/ilmu-komputer.jpeg"
+                             class="img-fluid">
+                        <style>
+                        .container {
+                          display: flex;
+                          align-items: center;
+                          margin-bottom: 20px;
+                        }
+
+                        .text-container {
+                          flex: 1;
+                          margin-right: 20px;
+                        }
+
+                        .image-container img {
+                          max-width: 100%;
+                          height: auto;
+                          width: 300px;
+                          height: 200px;
+                        }
+                      </style>
+                      </li>
+                    </ul>
+
+                    <ul class="container">
+                      <li class="text-container">
+                        <h4>Teknik Industri</h4>
+                        <p align="justify" style="font-size: 15px;">
+                          Pada jurusan ini berfokus pada penerapan ilmu dan teknik untuk merancang, mengoptimalkan, dan mengelola sistem dalam industri. Jurusan ini mempersiapkan mahasiswa untuk menjadi profesional yang mampu meningkatkan efisiensi, produktivitas, dan kualitas dalam proses produksi dan operasional perusahaan. Jurusan Teknik Industri adalah program studi di perguruan tinggi yang berfokus pada penerapan ilmu dan teknik untuk merancang, mengoptimalkan, dan mengelola sistem dalam industri. Mahasiswa jurusan ini akan mempelajari berbagai konsep dan metode dalam rekayasa sistem, manajemen operasi, manajemen rantai pasokan, serta ergonomi dan desain kerja. Salah satu fokus utama dalam jurusan Teknik Industri adalah meningkatkan efisiensi dan produktivitas dalam proses produksi dan operasional perusahaan. Mahasiswa akan mempelajari teknik-teknik untuk melakukan analisis sistem, perencanaan produksi, manajemen persediaan, perancangan layout pabrik, serta pemodelan dan simulasi proses bisnis.
+                        </p>
+                      </li>
+                      <li class="image-container">
+                        <img src="../assets/images/background/Adv-Teknik-Industri-featured.jpg" class="img-fluid">
+                        <style>
+                        .container {
+                          display: flex;
+                          align-items: center;
+                          margin-bottom: 20px;
+                        }
+
+                        .text-container {
+                          flex: 1;
+                          margin-right: 20px;
+                        }
+
+                        .image-container img {
+                          max-width: 100%;
+                          height: auto;
+                          width: 300px;
+                          height: 200px;
+                        }
+                      </style>
+                      </li>
+                    </ul>
+
+                    <div class="outer-box">
+                      <div class="inner-box">
+                        <div class="text-box">
+                          <center><h4><b>Jurusan</b></h4></center>
+                          <center><h1>3</h1></center>
+                        </div>
+                      </div>
+                      <div class="inner-box">
+                        <div class="text-box">
+                          <center><h4><b>Dosen</b></h4></center>
+                          <center><h1>10</h1></center>
+                        </div>
+                      </div>
+                      <div class="inner-box">
+                        <div class="text-box">
+                          <center><h4><b>Mahasiswa</b></h4></center>
+                          <center><h1>30</h1></center>
+                        </div>
+                      </div>
+                      <div class="inner-box">
+                        <div class="text-box">
+                          <center><h4><b>Kelas</b></h4></center>
+                          <center><h1>4</h1></center>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="image-container">
+                      <img src="../assets/images/background/gedung.jpeg" class="img-sendiri" />
+                      <div class="text-container">
+                        <h3>Gedung Kampus</h3>
+                        <p>Gedung kampus adalah bangunan fisik yang terletak di area<br />kampus perguruan tinggi atau universitas. Gedung-gedung kampus berfungsi sebagai tempat untuk kegiatan akademik, administrasi, dan sosial di dalam lingkungan kampus. Setiap gedung kampus memiliki peran dan fungsi yang berbeda dalam mendukung kegiatan akademik dan kehidupan kampus secara keseluruhan. Gedung-gedung ini menjadi tempat bagi mahasiswa untuk belajar, berinteraksi, dan berpartisipasi dalam berbagai kegiatan yang berkaitan dengan pendidikan dan pengembangan pribadi.Gedung-gedung kampus memainkan peran yang sangat penting dalam mendukung kegiatan akademik dan kehidupan kampus secara keseluruhan. Mereka menyediakan fasilitas dan ruang yang diperlukan untuk berbagai kegiatan pendidikan dan pengembangan mahasiswa pribadi.</p>
+                      </div>
+                    </div>
+
+                    <style>
+                    .outer-box {
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      height: 200px;
+                      background-color: #023047;
+                      padding: 20px;
+                      border-radius: 10px;
+                    }
+
+                    .inner-box {
+                      width: 170px;
+                      height: 170px;
+                      background-color: #FFFFFF;
+                      border: 1px solid #011b28;
+                      border-radius: 20px;
+                    }
+
+                    .text-box {
+                      text-align: center;
+                      padding: 10px;
+                    }
+
+                    .text-box h4 {
+                      font-size: 18px;
+                      font-weight: bold;
+                    }
+
+                    .text-box h1 {
+                      font-size: 68px;
+                    }
+
+                    .image-container {
+                      display: flex;
+                      align-items: center;
+                      margin-top: 20px; /* Sesuaikan margin antara coding di atas */
+                    }
+
+                    .img-sendiri {
+                      max-width: 100%;
+                      height: auto;
+                      width: 680px; /* Ubah ukuran lebar gambar sesuai kebutuhan */
+                      height: 580px; /* Ubah ukuran tinggi gambar sesuai kebutuhan */
+                      padding: 20px;
+                    }
+
+                    .text-container {
+                      margin-left: 20px; /* Sesuaikan jarak antara gambar dan teks */
+                    }
+
+                    .text-container h4 {
+                      font-size: 15px;
+                      font-weight: bold;
+                    }
+
+                    .text-container p {
+                      font-size: 14.7px;
+                      color: #555555;
+                    }
+                    </style>
+
+
+                    </div>
+                  </section>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- ============================================================== -->
+          <!-- End PAge Content -->
+          <!-- ============================================================== -->
+          <!-- ============================================================== -->
+          <!-- Right sidebar -->
+          <!-- ============================================================== -->
+          <!-- .right-sidebar -->
+          <!-- ============================================================== -->
+          <!-- End Right sidebar -->
+          <!-- ============================================================== -->
+        </div>
+        <!-- footer -->
+        <!-- ============================================================== -->
+        <footer class="footer text-center">
+          SIMA by Universitas Babastudio
+        </footer>
+        <!-- ============================================================== -->
+        <!-- End footer -->
+        <!-- ============================================================== -->
+      </div>
+      <!-- ============================================================== -->
+      <!-- End Page wrapper  -->
+      <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <script src="../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../dist/js/sidebarmenu.js"></script>
+    <style>
+      .sidebar-item {
+        padding-left: 5px; /* Atur jarak kiri menu utama */
+        font-weight: bold; /* Atur tebal teks menu utama */
+      }
+      
+      .sidebar-item.submenu {
+        padding-left: 15px; /* Atur jarak kiri submenu */
+        font-weight: normal; /* Atur tebal teks submenu */
+      }
+    </style>
+    <!--Custom JavaScript -->
+    <script src="../dist/js/custom.min.js"></script>
+    <!-- this page js -->
+    <script src="../assets/libs/jquery-steps/build/jquery.steps.min.js"></script>
+    <script src="../assets/libs/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+    function logout() {
+      Swal.fire({
+        title: 'Apakah Anda yakin?',
+        text: 'Anda akan keluar dari aplikasi.',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#dc3545',
+        cancelButtonColor: '#6c757d',
+        confirmButtonText: 'Keluar',
+        cancelButtonText: 'Batal'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Melakukan tindakan logout
+          window.location.href = 'index.html'; // Ganti dengan logika logout atau URL pengalihan sesuai kebutuhan Anda
+        }
+      });
+    }
+    </script>
+  </body>
+</html>
